@@ -1,0 +1,393 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veridian Language Partners — Multilingual Translation & Localization</title>
+<meta name="description" content="Veridian Language Partners provides expert translation, localization, MTPE and linguistic QA for medical, technology and corporate organizations expanding into international markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17233D;
+  --paper:#FAF7F1;
+  --paper-raised:#F3EEE3;
+  --brass:#9C7031;
+  --teal:#2E5F58;
+  --muted:#6B6558;
+  --line:#DDD6C8;
+  --max:1120px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{ font-family:'Fraunces', Georgia, serif; font-weight:500; margin:0; color:var(--ink); letter-spacing:-0.01em; }
+p{margin:0;}
+a{color:inherit;}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 2rem;}
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{ outline:2px solid var(--brass); outline-offset:3px; }
+
+header{ position:sticky; top:0; z-index:100; background:rgba(250,247,241,0.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:1.15rem 0; }
+.brand{ display:flex; align-items:center; gap:0.65rem; text-decoration:none; }
+.logo-mark{ flex-shrink:0; }
+.wordmark{ font-family:'Fraunces', serif; font-size:1.3rem; font-weight:500; letter-spacing:-0.01em; color:var(--ink); }
+.wordmark .dot{ color:var(--brass); }
+nav.links{ display:flex; align-items:center; gap:2.1rem; }
+nav.links a{ text-decoration:none; font-size:0.95rem; font-weight:500; color:var(--ink); opacity:0.75; transition:opacity .15s; cursor:pointer; }
+nav.links a:hover{ opacity:1; }
+.nav-cta{ background:var(--ink); color:var(--paper) !important; padding:0.6rem 1.25rem; border-radius:3px; opacity:1 !important; font-size:0.9rem !important; }
+.nav-cta:hover{ background:var(--brass); }
+.menu-btn{ display:none; background:none; border:none; cursor:pointer; padding:0.4rem; }
+.menu-btn span{ display:block; width:22px; height:2px; background:var(--ink); margin:5px 0; }
+@media (max-width:860px){
+  nav.links{ display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:0; background:var(--paper); border-bottom:1px solid var(--line); padding:0.5rem 2rem 1.5rem; }
+  nav.links.open{ display:flex; }
+  nav.links a{ padding:0.7rem 0; opacity:1; width:100%; }
+  .menu-btn{ display:block; }
+}
+
+.hero{ padding:5.5rem 0 4.5rem; }
+.hero-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:4rem; align-items:center; }
+.eyebrow-line{ display:flex; align-items:center; gap:0.7rem; color:var(--teal); font-size:0.92rem; font-weight:600; margin-bottom:1.6rem; }
+.eyebrow-line::before{ content:''; width:28px; height:1px; background:var(--teal); }
+.hero h1{ font-size:clamp(2.1rem, 4.3vw, 3.4rem); line-height:1.12; max-width:16ch; }
+.hero-sub{ margin-top:1.6rem; font-size:1.15rem; color:var(--muted); max-width:46ch; }
+.hero-ctas{ margin-top:2.3rem; display:flex; gap:1rem; flex-wrap:wrap; }
+.btn{ display:inline-block; padding:0.85rem 1.6rem; border-radius:3px; text-decoration:none; font-weight:600; font-size:0.98rem; cursor:pointer; border:1px solid transparent; transition:all .15s; }
+.btn-primary{ background:var(--ink); color:var(--paper); }
+.btn-primary:hover{ background:var(--brass); }
+.btn-ghost{ background:transparent; border-color:var(--ink); color:var(--ink); }
+.btn-ghost:hover{ background:var(--ink); color:var(--paper); }
+
+.transform-card{ background:var(--paper-raised); border:1px solid var(--line); border-radius:4px; padding:2.2rem 2rem; }
+.transform-label{ font-size:0.78rem; color:var(--muted); margin-bottom:0.5rem; }
+.transform-en{ font-size:1.15rem; color:var(--ink); padding-bottom:1.4rem; border-bottom:1px dashed var(--line); margin-bottom:1.4rem; }
+.transform-ar{ font-family:'Noto Naskh Arabic', serif; font-size:1.55rem; color:var(--teal); direction:rtl; text-align:right; }
+.transform-foot{ margin-top:1.6rem; padding-top:1.2rem; border-top:1px solid var(--line); font-size:0.85rem; color:var(--muted); display:flex; justify-content:space-between; }
+
+section{ padding:4.5rem 0; }
+.section-line{ border-top:1px solid var(--line); }
+.section-head{ max-width:56ch; margin-bottom:3rem; }
+.section-head .kicker{ font-size:0.9rem; font-weight:600; color:var(--brass); margin-bottom:0.8rem; display:block; }
+.section-head h2{ font-size:clamp(1.6rem, 2.6vw, 2.1rem); line-height:1.25; }
+.section-head p{ margin-top:1rem; color:var(--muted); font-size:1.05rem; }
+
+.practice{ display:grid; grid-template-columns:220px 1fr; gap:2.5rem; padding:2.4rem 0; border-top:1px solid var(--line); }
+.practice:last-child{ border-bottom:1px solid var(--line); }
+.practice-name{ font-family:'Fraunces', serif; font-size:1.3rem; font-weight:500; }
+.practice-tag{ font-size:0.85rem; color:var(--teal); margin-top:0.5rem; font-weight:600; }
+.practice-body p{ color:var(--muted); max-width:60ch; }
+.practice-list{ list-style:none; padding:0; margin:1.1rem 0 0; display:flex; flex-wrap:wrap; gap:0.6rem 1rem; }
+.practice-list li{ font-size:0.88rem; color:var(--ink); padding-left:0.9rem; position:relative; }
+.practice-list li::before{ content:''; position:absolute; left:0; top:0.55em; width:5px; height:5px; background:var(--brass); border-radius:50%; }
+@media (max-width:720px){ .practice{ grid-template-columns:1fr; gap:0.8rem; } }
+
+.process-list{ display:flex; flex-direction:column; }
+.process-item{ display:grid; grid-template-columns:70px 1fr; gap:1.5rem; padding:2rem 0; border-top:1px solid var(--line); }
+.process-item:last-child{ border-bottom:1px solid var(--line); }
+.process-num{ font-family:'Fraunces', serif; font-size:1.5rem; color:var(--brass); }
+.process-item h3{ font-size:1.15rem; font-weight:600; font-family:'Public Sans', sans-serif; }
+.process-item p{ color:var(--muted); margin-top:0.5rem; max-width:58ch; }
+
+.about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+.about-grid p{ color:var(--muted); margin-bottom:1.1rem; font-size:1.03rem; }
+.about-grid p:last-child{ margin-bottom:0; }
+.founder-card{ background:var(--paper-raised); border:1px solid var(--line); border-radius:4px; padding:2rem; }
+.founder-card h3{ font-size:1.2rem; }
+.founder-role{ color:var(--brass); font-size:0.92rem; font-weight:600; margin-top:0.3rem; }
+.founder-list{ list-style:none; padding:0; margin:1.4rem 0 0; }
+.founder-list li{ font-size:0.92rem; color:var(--muted); padding:0.55rem 0; border-top:1px solid var(--line); }
+.founder-list li:first-child{ border-top:none; }
+.founder-list b{ color:var(--ink); font-weight:600; }
+@media (max-width:820px){ .about-grid{ grid-template-columns:1fr; gap:2.5rem; } }
+
+.contact-wrap{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:4rem; }
+.contact-info p{ color:var(--muted); margin-top:1rem; max-width:40ch; }
+.contact-detail{ margin-top:2rem; }
+.contact-detail div{ margin-bottom:1.1rem; }
+.contact-detail .label{ font-size:0.82rem; color:var(--muted); }
+.contact-detail .value{ font-size:1.05rem; font-weight:600; margin-top:0.15rem; }
+.contact-detail a{ text-decoration:none; color:var(--ink); }
+.contact-detail a:hover{ color:var(--brass); }
+form{ display:flex; flex-direction:column; gap:1.2rem; }
+.field label{ display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem; }
+.field input, .field textarea{ width:100%; padding:0.85rem 1rem; border:1px solid var(--line); border-radius:3px; background:var(--paper-raised); font-family:'Public Sans', sans-serif; font-size:1rem; color:var(--ink); }
+.field textarea{ resize:vertical; min-height:110px; }
+.field-row{ display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
+@media (max-width:600px){ .field-row{ grid-template-columns:1fr; } }
+.form-note{ font-size:0.85rem; color:var(--muted); margin-top:-0.3rem; }
+#form-status{ font-size:0.9rem; margin-top:0.5rem; }
+@media (max-width:860px){ .contact-wrap{ grid-template-columns:1fr; gap:2.5rem; } .hero-grid{ grid-template-columns:1fr; gap:2.5rem; } }
+
+.cta-band{ background:var(--ink); color:var(--paper); padding:3.5rem 0; text-align:center; }
+.cta-band h2{ color:var(--paper); font-size:clamp(1.5rem, 2.6vw, 2rem); }
+.cta-band p{ color:#C9CCD6; margin-top:0.8rem; }
+.cta-band .btn-primary{ background:var(--brass); margin-top:1.6rem; }
+.cta-band .btn-primary:hover{ background:#B8863E; }
+
+footer{ border-top:1px solid var(--line); padding:2.5rem 0; }
+.footer-inner{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:0.88rem; color:var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">
+      <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="17" cy="17" r="16" fill="none" stroke="#17233D" stroke-width="1.3"/>
+        <path d="M9 12 L17 24 L25 12" fill="none" stroke="#9C7031" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 12 L17 12 L17 24" fill="none" stroke="#17233D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+      </svg>
+      <div class="wordmark">Veridian<span class="dot">.</span></div>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow-line">Language & Localization Partner</div>
+      <h1>Precision translation and localization across major world languages.</h1>
+      <p class="hero-sub">Veridian Language Partners helps medical, technology and corporate organizations expand into international markets — with expert human translation across multiple language pairs, efficient MTPE workflows, and rigorous linguistic QA behind every project.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Start a project</a>
+        <a href="#services" class="btn btn-ghost">See our services</a>
+      </div>
+    </div>
+    <div class="transform-card">
+      <div class="transform-label">Source — English</div>
+      <div class="transform-en">"This device is intended for use by trained clinical personnel only."</div>
+      <div class="transform-label" style="text-align:right;">Localized — Arabic</div>
+      <div class="transform-ar">هذا الجهاز مخصص للاستخدام من قبل الكوادر الطبية المدربة فقط.</div>
+      <div class="transform-foot">
+        <span>+ French, Spanish, German, Mandarin & more</span>
+        <span>Regulatory-ready</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section-line">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Services</span>
+      <h2>Three industries. One standard of accuracy.</h2>
+      <p>We concentrate where linguistic precision carries the most weight — where a mistranslation isn't just awkward, it's costly.</p>
+    </div>
+
+    <div class="practice">
+      <div>
+        <div class="practice-name">Medical & Life Sciences</div>
+        <div class="practice-tag">Primary specialization</div>
+      </div>
+      <div class="practice-body">
+        <p>Clinical documentation, medical device labeling, patient-facing materials and regulatory content, localized with the terminology consistency and traceability that compliance teams require.</p>
+        <ul class="practice-list">
+          <li>Clinical trial documentation</li>
+          <li>Medical device software & labeling</li>
+          <li>Regulatory & compliance filings</li>
+          <li>Patient-facing content</li>
+        </ul>
+      </div>
+    </div>
+    <div class="practice">
+      <div>
+        <div class="practice-name">Technology & SaaS</div>
+        <div class="practice-tag">High-volume, fast-turnaround</div>
+      </div>
+      <div class="practice-body">
+        <p>Software strings, UI copy, knowledge bases and technical documentation localized through efficient MTPE workflows with a human quality layer on top.</p>
+        <ul class="practice-list">
+          <li>Product & UI localization</li>
+          <li>Knowledge base & help content</li>
+          <li>Technical documentation</li>
+          <li>MTPE at scale</li>
+        </ul>
+      </div>
+    </div>
+    <div class="practice">
+      <div>
+        <div class="practice-name">Corporate & Marketing</div>
+        <div class="practice-tag">Brand-consistent transcreation</div>
+      </div>
+      <div class="practice-body">
+        <p>Marketing content, corporate communications and brand materials adapted — not just translated — to keep your voice intact for international audiences.</p>
+        <ul class="practice-list">
+          <li>Marketing & website content</li>
+          <li>Corporate communications</li>
+          <li>Presentations & brand assets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-line">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Additional Fields</span>
+      <h2>Also available across these industries.</h2>
+      <p>Beyond our core specializations, our linguist network covers a wide range of additional sectors for translation and localization projects.</p>
+    </div>
+    <ul class="practice-list" style="gap:0.9rem 1.6rem; font-size:0.98rem;">
+      <li>Legal & Contracts</li>
+      <li>E-commerce & Retail</li>
+      <li>Finance & Fintech</li>
+      <li>Travel & Hospitality</li>
+      <li>Education & E-learning</li>
+      <li>Gaming & Entertainment</li>
+      <li>Government & Public Sector</li>
+      <li>Manufacturing & Industrial</li>
+      <li>Non-profit & NGO</li>
+      <li>Real Estate</li>
+      <li>Automotive</li>
+      <li>Energy & Sustainability</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-line">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">How We Work</span>
+      <h2>A managed process, not a single translator.</h2>
+      <p>Every project moves through the same four stages, whether you're an LSP sending overflow work or a company localizing a product launch.</p>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="process-num">01</div>
+        <div><h3>Scope & assign</h3><p>We review the source content, confirm terminology and register, and assign the right linguists for the subject matter and language pair.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">02</div>
+        <div><h3>Translate or MTPE</h3><p>Content is translated by hand or run through machine translation post-editing, depending on volume, timeline and use case.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">03</div>
+        <div><h3>Linguistic QA</h3><p>A second linguist independently checks terminology, consistency, formatting and regional suitability before anything ships.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="process-num">04</div>
+        <div><h3>Deliver & debrief</h3><p>Final files are delivered with a short QA summary, and terminology decisions are logged for consistency on future work.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section-line">
+  <div class="wrap about-grid">
+    <div>
+      <span class="kicker" style="display:block;margin-bottom:0.8rem;">About</span>
+      <h2 style="font-size:clamp(1.6rem, 2.6vw, 2.1rem); margin-bottom:1.4rem;">Built around one person's expertise, run like an agency.</h2>
+      <p>Veridian Language Partners is led by Adrian Laurent, a translator and localization specialist with a background in MTPE, linguistic QA and multilingual project support.</p>
+      <p>Rather than working as a single freelance translator, Veridian operates as a managed practice: Adrian oversees client relationships, project scoping and final quality review, while a trusted network of vetted linguists handles individual language pairs and overflow volume.</p>
+      <p>We work across a broad range of language pairs — including English, Arabic, French, Spanish, German, Portuguese and Mandarin — matching each project with linguists who specialize in the relevant subject matter and market.</p>
+    </div>
+    <div class="founder-card">
+      <h3>Adrian Laurent</h3>
+      <div class="founder-role">Founder & Lead Localization Consultant</div>
+      <ul class="founder-list">
+        <li><b>Focus</b> — Multilingual translation, localization & QA</li>
+        <li><b>Specialization</b> — Medical, technology & corporate content</li>
+        <li><b>Role</b> — Client relations, project management, final linguistic QA</li>
+        <li><b>Network</b> — Vetted linguists across additional language pairs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-wrap">
+    <div class="contact-info">
+      <span class="kicker" style="display:block;margin-bottom:0.8rem;">Start a Project</span>
+      <h2 style="font-size:clamp(1.6rem, 2.6vw, 2.1rem);">Tell us what you're localizing.</h2>
+      <p>Whether you're an LSP looking for a reliable vendor, or a company expanding internationally — send us a few details and we'll follow up within one business day.</p>
+      <div class="contact-detail">
+        <div>
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:adrian.laurent.linguist@gmail.com">adrian.laurent.linguist@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <form id="contactForm">
+        <div class="field-row">
+          <div class="field"><label for="name">Name</label><input type="text" id="name" required></div>
+          <div class="field"><label for="company">Company</label><input type="text" id="company"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="email">Email</label><input type="email" id="email" required></div>
+          <div class="field"><label for="type">I am a...</label><input type="text" id="type" placeholder="LSP / Direct client"></div>
+        </div>
+        <div class="field"><label for="message">Project details</label><textarea id="message" required placeholder="Content type, volume, language pairs, timeline..."></textarea></div>
+        <p class="form-note">This opens your email app with the message pre-filled — nothing is sent automatically.</p>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send message</button>
+        <div id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="brand">
+      <svg class="logo-mark" width="24" height="24" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="17" cy="17" r="16" fill="none" stroke="#6B6558" stroke-width="1.3"/>
+        <path d="M9 12 L17 24 L25 12" fill="none" stroke="#9C7031" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 12 L17 12 L17 24" fill="none" stroke="#6B6558" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+      </svg>
+      <span>© 2026 Veridian Language Partners. All rights reserved.</span>
+    </div>
+    <span>adrian.laurent.linguist@gmail.com</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function(){
+    var nav = document.getElementById('navLinks');
+    var open = nav.classList.toggle('open');
+    this.setAttribute('aria-expanded', open);
+  });
+  document.getElementById('navLinks').addEventListener('click', function(e){
+    if (e.target.tagName === 'A') {
+      this.classList.remove('open');
+      document.getElementById('menuBtn').setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var company = document.getElementById('company').value;
+    var email = document.getElementById('email').value;
+    var type = document.getElementById('type').value;
+    var message = document.getElementById('message').value;
+    var subject = encodeURIComponent('New project inquiry from ' + name + (company ? ' (' + company + ')' : ''));
+    var body = encodeURIComponent('Name: ' + name + '\nCompany: ' + company + '\nEmail: ' + email + '\nType: ' + type + '\n\nDetails:\n' + message);
+    window.location.href = 'mailto:adrian.laurent.linguist@gmail.com?subject=' + subject + '&body=' + body;
+    document.getElementById('form-status').textContent = 'Opening your email app...';
+  });
+</script>
+
+</body>
+</html>
